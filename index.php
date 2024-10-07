@@ -1,44 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Ismail Tasdelen</title>
-  <meta content="security researcher, security consultant, bug bounty, bug bounty hunter, web security, penetration testing, cyber security, information security, siber güvenlik, bilgi güvenliği" name="keywords">
-  <meta content="Security Consultant" name="description">
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
-  <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/lib/magnific-popup/magnific-popup.css" rel="stylesheet">
-  <link href="assets/lib/hover/hover.min.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/responsive.css" rel="stylesheet">
-  <link rel="shortcut icon" href="images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acme Trucks</title>
+    <style>
+        /* Basic reset and styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* Header styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: #f8f8f8;
+        }
+        nav a {
+            margin-left: 1rem;
+            text-decoration: none;
+            color: #333;
+        }
+        /* Hero section */
+        .hero {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 4rem 0;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #fff;
+            color: #000;
+            text-decoration: none;
+            border-radius: 4px;
+            margin: 0 0.5rem;
+        }
+        /* Services section */
+        .services {
+            background-color: #f8f8f8;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .service-item {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        /* Contact section */
+        .contact {
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .contact-info, .contact-form {
+            text-align: left;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        /* Footer */
+        footer {
+            background-color: #f8f8f8;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-  <div id="header" class="home">
-    <div class="container">	
-      <div class="header-content">
-        <h1>I'm <span class="typed"></span></h1>
-        <p>security researcher, bug bounty hunter, developer</p>
-        <ul class="list-unstyled list-social">
-		  <li><a href="https://github.com/ismailtasdelen" target="_blank"><i class="ion-social-github"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/ismailtasdelen/" target="_blank"><i class="ion-social-linkedin" target="_blank"></i></a></li>
-          <li><a href="https://twitter.com/@ismailtsdln" target="_blank"><i class="ion-social-twitter"></i></a></li>
-          <li><a href="https://www.youtube.com/channel/UCPqc50Wmt6ZF2BJWtNJlq-g"><i class="ion-social-youtube" target="_blank"></i></a></li>
-		  <li><a href="https://www.instagram.com/mr.ismailtasdelen/" target="_blank"><i class="ion-social-instagram"></i></a></li>
-		  <li><a href="https://www.facebook.com/mr.ismailtasdelen" target="_blank"><i class="ion-social-facebook"></i></a></li>
-      </div>
-    </div>
-  </div>
-  <script src="assets/lib/jquery/jquery.min.js"></script>
-  <script src="assets/lib/jquery/jquery-migrate.min.js"></script>
-  <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/lib/typed/typed.js"></script>
-  <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="assets/lib/magnific-popup/magnific-popup.min.js"></script>
-  <script src="assets/lib/isotope/isotope.pkgd.min.js"></script>
-  <script src="assets/js/main.js"></script>
+    <header>
+        <a href="#" aria-label="Acme Trucks">
+            <!-- Replace with actual logo image -->
+            <img src="truck-icon.png" alt="" width="24" height="24">
+        </a>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Inventory</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Drive Your Dreams with Acme Trucks</h1>
+                <p>Discover our wide range of powerful and reliable trucks. From light-duty to heavy-duty, we have the perfect truck for your needs.</p>
+                <a href="#" class="btn">View Inventory</a>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <img src="truck-icon.png" alt="" width="24" height="24">
+                        <h3>New Trucks</h3>
+                        <p>Explore our latest models with cutting-edge technology and superior performance.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="map-pin-icon.png" alt="" width="24" height="24">
+                        <h3>Used Trucks</h3>
+                        <p>Quality pre-owned trucks at competitive prices, thoroughly inspected and certified.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="star-icon.png" alt="" width="24" height="24">
+                        <h3>Maintenance</h3>
+                        <p>Expert maintenance and repair services to keep your truck running at its best.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Have questions or ready to find your perfect truck? Reach out to our team of experts.</p>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <p><img src="map-pin-icon.png" alt="" width="20" height="20"> 123 Truck Lane, Motorville, TK 12345</p>
+                        <p><img src="phone-icon.png" alt="" width="20" height="20"> +1 (555) 123-4567</p>
+                        <p><img src="mail-icon.png" alt="" width="20" height="20"> info@acmetrucks.com</p>
+                    </div>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Acme Trucks. All rights reserved.</p>
+        <nav>
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy</a>
+        </nav>
+    </footer>
 </body>
 </html>
